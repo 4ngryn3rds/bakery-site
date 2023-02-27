@@ -1,9 +1,8 @@
 @font-face {
     font-family: 'scriptinaregular';
-    src: url('./assets/fonts/scriptina-webfont.woff') format('woff');
+    src: url('../fonts/scriptina-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -26,14 +25,13 @@ html, body {
 
 .container {
 	height: 900px;
-	background: #fff url('./intro.bmp') no-repeat center;
+	background: radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%), #fff url('../images/intro.bmp') no-repeat center;
 	width: 1600px;
 }
 .header {
 	height: 70px;
 	line-height: 70px;
-	background-color: #56534c;
-	opacity: 0.53;
+	background-color: rgba(86, 83, 76, 0.53);
 }
 .header_inner {
 	width: 100%;
@@ -96,23 +94,72 @@ html, body {
 .circle {
 	position: absolute;
 	opacity: 0.71;
+
 }
 
-.rrr {
-	color: #000;
-}
-
-
-/* intro 
-.intro {
-	
-	box-align: center;
-}
-}
-*/
 h1 {
-	font-family: 'Playfair Display', serif;
 	font-size: 92px;
+	letter-spacing: 7px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Playfair Display";
+	filter: drop-shadow(0px 1px 0px #3d3029);
 	text-align: center;
-	color: #fff;
+	position: relative;
+	top: 230px;
+}
+
+h2 {
+	width: 580px;
+	height: 69px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 36px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: "Proxima Nova";
+	text-align: center;
+	position: relative;
+	display: flex;
+	top:400px;
+	filter: drop-shadow(0px 1px 0px #3d3029);
+	margin: 0px auto;
+}
+
+.dashline {
+	transform: translate(702.5px, 275px);
+
+}
+
+.dashed_line {
+	filter:url(#f1);
+	fill:none;
+	stroke:#fff;
+	stroke-width:2;
+	stroke-dasharray:8,16;
+}
+
+.container2 {
+background-color: #fefefd;
+height: 760px;
+}
+
+.container3 {
+	background: #fff url('../images/Ebene 11.jpg') no-repeat center;
+	background-size: 1600px auto;
+	background-position: -10px -20px;
+	height: 760px;
+}
+
+.container4 {
+	background: #fff url('../images/background_container4.jpg') no-repeat center;
+	background-size: 1600px auto;
+	background-position: 0px -165px;
+	height: 760px;
+}
+
+.container5 {
+	background-color: #f3f1e9;
+	height: 1160px;
 }
