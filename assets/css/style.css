@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'scriptinaregular';
+    src: url('./assets/fonts/scriptina-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+
+}
+
+.site_wrapper {
+	color: #fff;
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.container {
+	height: 900px;
+	background: #fff url('./intro.bmp') no-repeat center;
+	width: 1600px;
+}
+.header {
+	height: 70px;
+	line-height: 70px;
+	background-color: #56534c;
+	opacity: 0.53;
+}
+.header_inner {
+	width: 100%;
+	max-width: 1260px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.header-logo {
+	font-family: 'scriptinaregular', 'arial';
+	font-size: 30px;
+	letter-spacing: 9px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: 400;
+	opacity: 1;
+	display: inline;
+}
+
+.navigation {
+	font-size: 14px;
+	letter-spacing: 4px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-family: "Alegreya";
+	opacity: 1;
+	display: inline-block;
+}
+
+.nav_tilda {
+	padding: 40px;
+	opacity: 1;
+	color: #fff
+}
+
+.nav_link {
+	color: #fff;
+	opacity: 1;
+	display: inline;
+}
+
+.header_socialmedia {
+	color: #fff;
+	opacity: 1;
+	display: inline-block;
+}
+
+.link_socialmedia {
+	width: 19px;
+	height: 19px;
+	color: #fff;
+	opacity: 1;
+	display: inline-block;
+}
+
+.circle_holder {
+	position: absolute;
+}
+
+.circle {
+	position: absolute;
+	opacity: 0.71;
+}
+
+.rrr {
+	color: #000;
+}
+
+
+/* intro 
+.intro {
+	
+	box-align: center;
+}
+}
+*/
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 92px;
+	text-align: center;
+	color: #fff;
+}
