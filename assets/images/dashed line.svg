@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193 12" width="193" height="12">
+	<title>dashed line</title>
+	<defs>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="-6.123233995736766e-17" dy="1" stdDeviation="0" flood-color="#3d3029" flood-opacity="1"/></filter>
+	</defs>
+	<style>
+		.s0 { filter: url(#f1);fill: #834f4e;stroke: #ffffff;stroke-width: 2;stroke-dasharray: 8,16 } 
+	</style>
+	<path id="dashed line" class="s0" d="m2 1c25.4 0 25.9 9 48 9 22.1 0 29.2-9 47-9 17.8 0 29 9 47 9 18 0 24.2-9 48-9"/>
+</svg>
