@@ -27,6 +27,7 @@ html, body {
 	height: 900px;
 	background: radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%), #fff url('../images/intro.bmp') no-repeat center;
 	width: 1600px;
+	position: relative;
 }
 .header {
 	height: 70px;
@@ -38,6 +39,8 @@ html, body {
 	max-width: 1260px;
 	margin: 0 auto;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header-logo {
@@ -48,7 +51,7 @@ html, body {
 	color: #ffffff;
 	font-weight: 400;
 	opacity: 1;
-	display: inline;
+	display: inline-block;
 }
 
 .navigation {
@@ -138,6 +141,30 @@ h2 {
 	stroke:#fff;
 	stroke-width:2;
 	stroke-dasharray:8,16;
+}
+
+.btn_wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	background-color: rgba(86,83,76,0.53);
+	position: absolute;
+	padding: 18px 50px;
+	border: 1px dashed #fff;
+	font-size: 14px;
+	letter-spacing: 4px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Alegreya";
+	top: 636px;
+}
+
+.button:hover {
+	border: 1px solid #ffffff;
 }
 
 .container2 {
