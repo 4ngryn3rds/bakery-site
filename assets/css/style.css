@@ -17,12 +17,13 @@ html, body {
 }
 
 .site_wrapper {
-	color: #fff;
+	color: #000;
 	width: 100%;
 	max-width: 1600px;
 	margin: 0 auto;
 }
 
+/*------1st block------*/
 .container {
 	height: 900px;
 	background: radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%), #fff url('../images/intro.bmp') no-repeat center;
@@ -67,13 +68,16 @@ html, body {
 .nav_tilda {
 	padding: 40px;
 	opacity: 1;
-	color: #fff
+	color: #fff;
 }
 
+
 .nav_link {
+	position: relative;
+	text-decoration: none;
 	color: #fff;
 	opacity: 1;
-	display: inline;
+	display: inline-block;
 }
 
 .header_socialmedia {
@@ -113,7 +117,7 @@ h1 {
 	top: 230px;
 }
 
-h2 {
+.slogan2 {
 	width: 580px;
 	height: 69px;
 	font-size: 30px;
@@ -167,25 +171,496 @@ h2 {
 	border: 1px solid #ffffff;
 }
 
+.sealing_wax {
+	position: absolute;
+	left: 747px;
+	top: 847px;
+	z-index: 10;
+}
+
+/*------2nd block------*/
 .container2 {
 background-color: #fefefd;
 height: 760px;
+display: flex;
+justify-content: center;
 }
 
+
+.page2_leftpart {
+	width: 630px;
+	display: block;
+	text-align: center;
+}
+
+.title_page2 {
+	font-size: 48px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #56534c;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-align: center;
+	margin-top: 108px;
+	color: #56534c;
+}
+.sub_title_page2 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	display: block;
+	color: #a47d5e;
+}
+
+.paragraph_page2 {
+	width: 450px;
+	height: 87px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: #56534c;
+	font-family: "Proxima Nova";
+	text-align: center;
+	margin: 65px auto;
+}
+.chef_cook_block {
+	position: relative;
+	display: flex;
+	text-align: center;
+	line-height: 100px;
+	align-items: center;
+	margin-top: 42px;
+	display: block;
+}
+
+.chef_cook {
+	font-size: 24px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #56534c;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-align: center;
+	display: block;
+	margin-top: 70px;
+}
+
+.cook_name {
+	font-size: 24px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #56534c;
+	font-weight: 400;
+	font-family: "Alegreya";
+	text-align: center;
+	display: inline-block;
+	border-top: 1px solid #d7d5ca;
+	border-bottom: 1px solid #d7d5ca;
+	width: 111px;
+	padding-top: 22px;
+	padding-bottom: 18px;
+}
+
+.cook_name::after {
+	top:0px;
+	left: 0px;
+	position: absolute;
+	border-top: 1px solid #000;
+}
+
+.chef_photo{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: url('../images/chef_photo.png') no-repeat center;
+	background-position: -40px 0px;
+	margin: auto 25px;
+	position: relative;
+}
+.chef_circle {
+	position: relative;
+	background: radial-gradient(circle closest-side, #00000000 100%, #ffffff 0%)
+}
+
+.sub_chef {
+	position: relative;
+	font-size: 24px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #a47d5e;
+	font-weight: 400;
+	font-family: "scriptinaregular";
+	display: block;
+	width: 408px;
+	margin: 25px auto;
+}
+
+.top_brackets {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top:6px;
+	opacity: 0.502;
+	font-size: 60px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	color: #56534c;
+	font-family: "Times New Roman";
+}
+
+.bottom_brackets {
+	display: block;
+	position: absolute;
+	right: 0px;
+	bottom:-10px;
+	opacity: 0.502;
+	font-size: 60px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	color: #56534c;
+	font-family: "Times New Roman";
+}
+
+
+.page2_rightpart {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 630px;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.rectangle {
+	position: absolute;
+}
+
+.taste_image {
+	margin: 0px;
+	display: inline-block;
+	width: 295px;
+	height: 250px;
+	margin: 10px 0px;
+}
+
+.page2_rightlist_img1 {
+	background: url('../images/page2_rightlist_img1.png') no-repeat center;
+}
+
+.page2_rightlist_img2 {
+	background: url('../images/page2_rightlist_img2.png') no-repeat center;
+}
+
+.page2_rightlist_img3 {
+	background: url('../images/page2_rightlist_img3.png') no-repeat center;
+}
+
+.page2_rightlist_img4 {
+	background: url('../images/page2_rightlist_img4.png') no-repeat center;
+}
+
+.page2_rightlist_img5 {
+	position: absolute;
+	align-self: center;
+}
+
+.s0 { fill: rgba(255,255,255,0.90)}
+.s1 { fill: none;stroke: rgba(255,255,255,0.90);stroke-width: 2}
+
+.tastes_so_good {
+	position: absolute;
+	align-self: center;
+	color: #000;
+	text-align: justify;
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #c9b176;
+	font-weight: 400;
+	font-family: "Alegreya";
+	text-align: center;
+}
+
+/*------3rd block------*/
 .container3 {
-	background: #fff url('../images/Ebene 11.jpg') no-repeat center;
+	background: #fff url('../images/Ebene11.jpg') no-repeat center;
 	background-size: 1600px auto;
-	background-position: -10px -20px;
+	background-position: 0px -20px;
+	width: 1600px;
 	height: 760px;
+	position: relative;
+	align-items: center;
+	display: flex;
 }
 
+.menu_wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-left: 265px;
+}
+
+.menu_photo_wrapper{
+	display: flex;
+	position: relative;
+}
+
+.menu_photo {
+	background: url('../images/menu_photo.png') no-repeat;
+	background-size: auto 512px;
+	width: 418px;
+	height: 512px;
+	background-position: -325px;
+	clip-path: polygon(0px 0px, 418px 0px, 418px 512px, 50px 512px, 0px 462px);
+}
+
+.paper_triangle{
+	position: absolute;
+	display: block;
+	top: 462px;
+}
+
+.menu_description {
+	background: #fff url('../images/mill.png') no-repeat center;
+	background-position: right bottom;
+	width: 548px;
+	position: relative;
+	display: block;
+}
+
+.menu_title {
+	display: block;
+	font-size: 48px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #56534c;
+	font-weight: 700;
+	font-family: "Alegreya";
+	margin-left: 60px;
+	margin-top: 83px;
+}
+
+.submenu_title{
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #a47d5e;
+	font-weight: 700;
+	font-family: "Alegreya";
+	margin-left: 60px;
+	margin-top: 21px;
+}
+
+.dish_information {
+	width: 420px;
+	height: 58px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: #56534c;
+	font-family: "Proxima Nova";
+	margin-left: 60px;
+	margin-top: 72px;
+}
+
+.menu_list_block{
+	margin-top: 80px;
+	margin-left: 60px;
+	margin-right: 60px;
+	bottom: 40px;
+	color: black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu_circle {
+	width: 90px;
+	height: 90px;
+	clip-path: circle(50%);
+	margin: 0px 15px;
+}
+
+.dish1 {
+	background: url('../images/dish1.png') no-repeat;
+	background-position: 40% 50%;
+}
+
+.dish2 {
+	background: url('../images/dish2.png') no-repeat;
+	background-position: 50% 100%;
+}
+
+.dish3 {
+	background: url('../images/dish3.png') no-repeat;
+	background-position: 100% 60%;
+}
+
+.nav_left { fill: #d8bba3 }
+.nav_right { fill: #d8bba3 }
+
+.nav_left:hover { fill:#56534c }
+.nav_right:hover { fill:#56534c }
+
+.ready_timer {
+	display: block;
+	width: 200px;
+	height: 200px;
+	background: #fff url('../images/timer_water_sign.png');
+	position: absolute;
+	right: -105px;
+	top:-43px;
+	text-align: center;
+	box-shadow: 10px 20px 50px #c6bcb4,-10px 20px 50px #c6bcb4
+}
+
+.ready_in{
+	display: block;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #a47d5e;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-align: center;
+	margin-top: 34px;
+}
+
+.timer {
+	font-size: 92px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #dfc691;
+	font-weight: 700;
+	font-family: "Alegreya";
+	display: block;
+	margin-top: 43px;
+}
+
+.mins {
+	display: block;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	color: #979285;
+	font-weight: 700;
+	font-family: "Alegreya";
+	margin-top: 15px;
+}
+
+/*------4th block------*/
 .container4 {
-	background: #fff url('../images/background_container4.jpg') no-repeat center;
+	background: #fff url('../images/background_container4.jpg') no-repeat;
 	background-size: 1600px auto;
 	background-position: 0px -165px;
 	height: 760px;
+	color: #fff;
+	position: relative;
 }
 
+.container4_wrapper {
+	width: 1260px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0px auto;
+}
+
+.prices_section {
+	width: 50%;
+	display: block;
+	text-align: center;
+}
+
+.prices_section_title {
+	margin-top: 95px;
+	font-size: 60px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-align: center;
+	display: block;
+	margin-bottom: 18px;
+
+}
+
+.prices_section_subtitle {
+	margin-bottom: 50px;
+	font-size: 18px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	color: #c8a593;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-align: center;
+	display: block;
+}
+
+.menu_item {
+	margin-top: 0px;
+	display: block;
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-align: center;
+}
+
+.menu_item_description {
+	margin-top: 16px;
+	font-weight: 400;
+	font-family: "Proxima Nova";
+	display: block;
+	color: #c2beba
+}
+
+.price {
+	margin-top: 34px;
+	display: block;
+	font-size: 36px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	color: #dfc691;
+	font-weight: 400;
+	font-family: "Alegreya";
+	text-align: center;
+}
+
+.water_sign_prices {
+	margin: 5px 0;
+	background: url('../images/water_sign_prices.png') no-repeat center;
+	display: block;
+}
+
+.notes_section {
+	width: 630px;
+	display: block;
+	position: relative;
+
+}
+
+.note_book {
+	position: absolute;
+	width: 440px;
+	height: 600px;
+	right: 0px;
+	top:88px;
+	background: #ffffff;
+}
+
+/*------5th block------*/
 .container5 {
 	background-color: #f3f1e9;
 	height: 1160px;
