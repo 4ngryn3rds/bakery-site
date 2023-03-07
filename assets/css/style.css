@@ -5,6 +5,7 @@
     font-style: normal;
 }
 
+
 *, html, body {
 	padding: 0;
 	margin: 0;
@@ -193,77 +194,77 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 }
 
 /*------2nd block------*/
-.container2 {
+.chef {
 background-color: #fefefd;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 }
 
 
-.page2_leftpart {
-	width: 630px;
-	display: block;
+.chef__info {
+	max-width: 630px;
 	text-align: center;
 }
 
-.title_page2 {
+.chef__title {
 	font-size: 48px;
 	letter-spacing: 1px;
-	line-height: 30px;
+	line-height: 48px;
 	color: #56534c;
 	font-weight: 700;
 	font-family: "Alegreya";
-	text-align: center;
-	margin-top: 108px;
+	padding-top: 70px;
+	padding-bottom: 20px;
 	color: #56534c;
 }
-.sub_title_page2 {
+.chef__subtitle {
 	font-size: 14px;
 	letter-spacing: 1px;
 	line-height: 30px;
 	font-weight: 700;
 	font-family: "Alegreya";
-	text-align: center;
 	text-transform: uppercase;
-	margin-top: 20px;
-	display: block;
+	padding-bottom: 65px;
 	color: #a47d5e;
 }
 
-.paragraph_page2 {
-	width: 450px;
-	height: 87px;
+.chef__text {
+	padding: 0px 74px;
 	font-size: 14px;
 	letter-spacing: 1px;
 	line-height: 24px;
+	font-weight: 500;
 	color: #56534c;
-	font-family: "Proxima Nova";
-	text-align: center;
-	margin: 65px auto;
-}
-.chef_cook_block {
-	position: relative;
-	display: flex;
-	text-align: center;
-	line-height: 100px;
-	align-items: center;
-	margin-top: 42px;
-	display: block;
+	font-family: "proximanova", sans-serif;
+	padding-bottom: 42px;
 }
 
-.chef_cook {
+.chef__cook {
 	font-size: 24px;
 	letter-spacing: 1px;
 	line-height: 30px;
 	color: #56534c;
 	font-weight: 700;
 	font-family: "Alegreya";
-	text-align: center;
-	display: block;
-	margin-top: 70px;
+	padding-bottom: 45px;
 }
 
-.cook_name {
+.chef__profile {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	border: 1px solid red;
+	max-width: 372px;
+	margin: 0px auto;
+}
+
+
+.chef__name {
+	display: inline-block;
+	border: 1px solid blue;
 	font-size: 24px;
 	letter-spacing: 1px;
 	line-height: 30px;
@@ -271,36 +272,21 @@ justify-content: center;
 	font-weight: 400;
 	font-family: "Alegreya";
 	text-align: center;
-	display: inline-block;
 	border-top: 1px solid #d7d5ca;
 	border-bottom: 1px solid #d7d5ca;
-	width: 111px;
-	padding-top: 22px;
-	padding-bottom: 18px;
+	padding: 22px 22px 18px 22px;
+
 }
 
-.cook_name::after {
-	top:0px;
-	left: 0px;
-	position: absolute;
-	border-top: 1px solid #000;
-}
-
-.chef_photo{
+.chef__photo {
+	border-radius: 50%;
 	display: inline-block;
-	width: 100px;
-	height: 100px;
-	background: url('../images/chef_photo.png') no-repeat center;
-	background-position: -40px 0px;
-	margin: auto 25px;
-	position: relative;
-}
-.chef_circle {
-	position: relative;
-	background: radial-gradient(circle closest-side, #00000000 100%, #ffffff 0%)
+	object-fit: cover;
+	object-position: left;
+	border: 1px solid green;
 }
 
-.sub_chef {
+.chef__subtext {
 	position: relative;
 	font-size: 24px;
 	letter-spacing: 1px;
@@ -309,8 +295,38 @@ justify-content: center;
 	font-weight: 400;
 	font-family: "scriptinaregular";
 	display: block;
-	width: 408px;
-	margin: 25px auto;
+	max-width: 408px;
+	margin: 0px auto;
+	margin-top: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 92px;
+	border: 1px solid gold;
+}
+
+.chef__subtext:before {
+	content: "“";
+	position: absolute;
+	left: 0;
+	top:10px;
+	opacity: 0.502;
+	font-size: 60px;
+	letter-spacing: 2px;
+	color: #56534c;
+	font-family: "Times New Roman";
+}
+
+.chef__subtext:after {
+	content: "“";
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	opacity: 0.502;
+	font-size: 60px;
+	letter-spacing: 2px;
+	color: #56534c;
+	font-family: "Times New Roman";
+	transform: rotateY(180deg);
 }
 
 .top_brackets {
