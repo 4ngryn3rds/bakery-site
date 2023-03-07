@@ -5,54 +5,104 @@
     font-style: normal;
 }
 
-
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
 html, body {
-
+	padding: 0;
+	margin: 0;
 }
 
-.site_wrapper {
-	color: #000;
-	width: 100%;
-	max-width: 1600px;
-	margin: 0 auto;
+*, ::before, ::after {
+	box-sizing: border-box;
 }
 
-/*------1st block------*/
 .container {
-	height: 900px;
-	background: radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%), #fff url('../images/intro.bmp') no-repeat center;
-	width: 1600px;
+	padding: 0 170px;
+}
+
+/*------header block------
+radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
+*/
+
+.header {
+	background-image: url('../images/intro.bmp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: relative;
 }
-.header {
-	height: 70px;
-	line-height: 70px;
-	background-color: rgba(86, 83, 76, 0.53);
-}
+
 .header_inner {
-	width: 100%;
-	max-width: 1260px;
-	margin: 0 auto;
+	min-height: 70px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	gap:0px;
+	background-color: rgba(86, 83, 76, 0.53);
 	align-items: center;
 }
 
-.header-logo {
-	font-family: 'scriptinaregular', 'arial';
-	font-size: 30px;
-	letter-spacing: 9px;
-	line-height: 24px;
+.header__logo {
+	align-items: center;
+	border: 1px solid gold;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.header__navigation {
+	border: 1px solid gold;
+}
+
+.header__list {
+	border: 1px solid;
+	font-family: "Alegreya";
+	font-size: 14px;
+	letter-spacing: 4px;
+	list-style: none;
+	text-transform: uppercase;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 20px;
+	column-gap: 0px;
+	margin: 0;
+	padding: 0;
+
+}
+
+.header__wrapper {
+	border: 1px solid red;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 40px;
+}
+
+.header__tilda {
+	border: 1px solid green;
 	color: #ffffff;
-	font-weight: 400;
-	opacity: 1;
-	display: inline-block;
+}
+
+.header__item {
+	flex-grow: 2;
+	border: 1px solid silver;
+	position: relative;
+}
+
+.zzzzzheader__item::after {
+	position: relative;
+	padding-left: 20px;
+	content: "~";
+	color: #ffffff;
+}
+
+.header__link {
+	border: 1px solid blue;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.header__social-links {
+	border: 1px solid gold;
+	display: flex;
 }
 
 .navigation {
