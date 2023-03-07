@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-html, body {
+*, html, body {
 	padding: 0;
 	margin: 0;
 }
@@ -14,13 +14,23 @@ html, body {
 	box-sizing: border-box;
 }
 
-.container {
-	padding: 0 170px;
-}
 
 /*------header block------
 radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 */
+
+.shrink {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.shrink-inner {
+	border: 1px solid purple;
+	padding-left: 170;
+	flex-basis: 170px;
+	flex-shrink: 0.5;
+}
 
 .header {
 	background-image: url('../images/intro.bmp');
@@ -28,12 +38,13 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	padding-bottom: 215px;
 }
 
 .header_inner {
 	min-height: 70px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	gap:0px;
 	background-color: rgba(86, 83, 76, 0.53);
@@ -62,9 +73,9 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	row-gap: 20px;
+	row-gap: 15px;
 	column-gap: 0px;
-	margin: 0;
+	margin: 15px 0px;
 	padding: 0;
 
 }
@@ -87,13 +98,6 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 	position: relative;
 }
 
-.zzzzzheader__item::after {
-	position: relative;
-	padding-left: 20px;
-	content: "~";
-	color: #ffffff;
-}
-
 .header__link {
 	border: 1px solid blue;
 	text-decoration: none;
@@ -101,75 +105,51 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 }
 
 .header__social-links {
-	border: 1px solid gold;
 	display: flex;
+	justify-content: space-between;
+	column-gap: 29px;
+	border: 1px solid gold;
+	align-items: center;
 }
 
-.navigation {
-	font-size: 14px;
-	letter-spacing: 4px;
-	line-height: 24px;
-	text-transform: uppercase;
-	font-family: "Alegreya";
-	opacity: 1;
-	display: inline-block;
+.header__social-link {
 }
 
-.nav_tilda {
-	padding: 40px;
-	opacity: 1;
-	color: #fff;
+.header__info {
+	border: 1px solid green;
+	display: block;
+	text-align: center;
 }
 
-
-.nav_link {
-	position: relative;
-	text-decoration: none;
-	color: #fff;
-	opacity: 1;
-	display: inline-block;
-}
-
-.header_socialmedia {
-	color: #fff;
-	opacity: 1;
-	display: inline-block;
-}
-
-.link_socialmedia {
-	width: 19px;
-	height: 19px;
-	color: #fff;
-	opacity: 1;
-	display: inline-block;
-}
-
-.circle_holder {
-	position: absolute;
-}
-
-.circle {
-	position: absolute;
-	opacity: 0.71;
-
-}
-
-h1 {
+.header__title {
 	font-size: 92px;
 	letter-spacing: 7px;
-	line-height: 24px;
+	line-height: 92px;
 	color: #ffffff;
 	font-weight: 700;
 	font-family: "Playfair Display";
-	filter: drop-shadow(0px 1px 0px #3d3029);
+	filter: drop-shadow(0px 1px 4px #3d3029);
 	text-align: center;
+	padding-top: 172px;
+	padding-bottom: 80px;
+	border: 1px solid gold;
 	position: relative;
-	top: 230px;
 }
 
-.slogan2 {
-	width: 580px;
-	height: 69px;
+.header__title:after {
+	position: absolute;
+	content: '';
+	background-image: url('../images/dashline.svg');
+	background-repeat: no-repeat;
+	height: 14px;
+	width: 190px;
+	bottom: 0;
+	margin-left: -95px;
+	left: 50%;
+
+}
+
+.header__text {
 	font-size: 30px;
 	letter-spacing: 2px;
 	line-height: 36px;
@@ -177,34 +157,16 @@ h1 {
 	font-weight: 400;
 	font-family: "Proxima Nova";
 	text-align: center;
-	position: relative;
-	display: flex;
-	top:400px;
 	filter: drop-shadow(0px 1px 0px #3d3029);
+	padding: 70px 0px;
+	max-width: 550px;
+	border: 1px solid gold;
 	margin: 0px auto;
 }
 
-.dashline {
-	transform: translate(702.5px, 275px);
 
-}
-
-.dashed_line {
-	filter:url(#f1);
-	fill:none;
-	stroke:#fff;
-	stroke-width:2;
-	stroke-dasharray:8,16;
-}
-
-.btn_wrapper {
-	display: flex;
-	justify-content: center;
-}
-
-.button {
+.header__button {
 	background-color: rgba(86,83,76,0.53);
-	position: absolute;
 	padding: 18px 50px;
 	border: 1px dashed #fff;
 	font-size: 14px;
@@ -214,14 +176,16 @@ h1 {
 	color: #ffffff;
 	font-weight: 700;
 	font-family: "Alegreya";
-	top: 636px;
+	margin: 0px auto;
 }
 
-.button:hover {
+.header__button:hover {
+	background-color: rgba(86,83,76,0.70);
 	border: 1px solid #ffffff;
+	cursor: pointer;
 }
 
-.sealing_wax {
+.seaaling_wax {
 	position: absolute;
 	left: 747px;
 	top: 847px;
@@ -231,7 +195,6 @@ h1 {
 /*------2nd block------*/
 .container2 {
 background-color: #fefefd;
-height: 760px;
 display: flex;
 justify-content: center;
 }
