@@ -15,18 +15,31 @@
 	box-sizing: border-box;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 
 /*------header block------
 radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 */
 
-.shrink {
+.header__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	border: 1px solid skyblue;
 }
 
-.shrink-inner {
+.header__shrink {
 	border: 1px solid purple;
 	padding-left: 170;
 	flex-basis: 170px;
@@ -42,7 +55,7 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 	padding-bottom: 215px;
 }
 
-.header_inner {
+.header__inner {
 	min-height: 70px;
 	display: flex;
 	flex-wrap: nowrap;
@@ -106,6 +119,7 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 }
 
 .header__social-links {
+	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	column-gap: 29px;
@@ -329,83 +343,22 @@ justify-content: center;
 	transform: rotateY(180deg);
 }
 
-.top_brackets {
-	display: block;
-	position: absolute;
-	left: 0px;
-	top:6px;
-	opacity: 0.502;
-	font-size: 60px;
-	letter-spacing: 2px;
-	line-height: 30px;
-	color: #56534c;
-	font-family: "Times New Roman";
-}
-
-.bottom_brackets {
-	display: block;
-	position: absolute;
-	right: 0px;
-	bottom:-10px;
-	opacity: 0.502;
-	font-size: 60px;
-	letter-spacing: 2px;
-	line-height: 30px;
-	color: #56534c;
-	font-family: "Times New Roman";
-}
-
-
-.page2_rightpart {
+.chef__pictures {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	width: 630px;
-	justify-content: space-around;
+	justify-content: center;
 	align-content: center;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
-.rectangle {
+.chef__review {
 	position: absolute;
-}
-
-.taste_image {
-	margin: 0px;
-	display: inline-block;
-	width: 295px;
-	height: 250px;
-	margin: 10px 0px;
-}
-
-.page2_rightlist_img1 {
-	background: url('../images/page2_rightlist_img1.png') no-repeat center;
-}
-
-.page2_rightlist_img2 {
-	background: url('../images/page2_rightlist_img2.png') no-repeat center;
-}
-
-.page2_rightlist_img3 {
-	background: url('../images/page2_rightlist_img3.png') no-repeat center;
-}
-
-.page2_rightlist_img4 {
-	background: url('../images/page2_rightlist_img4.png') no-repeat center;
-}
-
-.page2_rightlist_img5 {
-	position: absolute;
-	align-self: center;
-}
-
-.s0 { fill: rgba(255,255,255,0.90)}
-.s1 { fill: none;stroke: rgba(255,255,255,0.90);stroke-width: 2}
-
-.tastes_so_good {
-	position: absolute;
-	align-self: center;
 	color: #000;
-	text-align: justify;
+	width: 247px;
+	height: 247px;
 	font-size: 30px;
 	letter-spacing: 2px;
 	line-height: 36px;
@@ -414,9 +367,128 @@ justify-content: center;
 	font-weight: 400;
 	font-family: "Alegreya";
 	text-align: center;
+	display: flex;
+	align-items: center;
+	background-image: url('../images/sogood.png');
+	margin-left: -123px;
+	margin-top: -123px;
+	left:50%;
+	top: 50%;
 }
 
+
+
+
+
+
 /*------3rd block------*/
+.menu {
+	background-image: url('../images/Ebene11.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 140px;
+	padding-bottom: 108px;
+}
+
+.menu__photo {
+	position: relative;
+	object-fit: cover;
+	padding-bottom: 20px;
+	clip-path: polygon(0px 0px, 418px 0px, 418px 512px, 50px 512px, 0px 462px);
+}
+
+.menu__photo:after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
+	bottom: 25px;
+	left: -20px;
+}
+
+.menu__description {
+	background-color: #fff;
+	max-width: 548px;
+	text-align: center;
+	padding-top: 80px;
+	min-height: 512px;
+}
+
+.menu__positions {
+	display: flex;
+	border: 1px solid black;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu__arrow {
+	fill: #d8bba3;
+}
+
+.menu__arrow:hover {
+	fill: #56534c;
+	cursor: pointer;
+}
+
+.menu__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+	padding: 0px 15px;
+}
+
+.menu__item {
+}
+
+.menu__pic {
+	border-radius: 50%;
+}
+
+
+.menu__title {
+	text-align: left;
+	padding-left: 64px;
+	font-size: 48px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #56534c;
+	font-weight: 700;
+	font-family: "Alegreya";
+	padding-bottom: 14px;
+}
+
+.menu__subtitle{
+	text-align: left;
+	padding-left: 64px;
+	padding-bottom: 70px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #a47d5e;
+	font-weight: 700;
+	font-family: "Alegreya";
+	text-transform: uppercase;
+}
+
+.menu__information {
+	text-align: left;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: #56534c;
+	font-family: "Proxima Nova";
+	padding-left: 64px;
+	padding-right: 84px;
+	margin-bottom: 100px ;
+}
+
+
+
 .container3 {
 	background: #fff url('../images/Ebene11.jpg') no-repeat center;
 	background-size: 1600px auto;
@@ -427,6 +499,12 @@ justify-content: center;
 	align-items: center;
 	display: flex;
 }
+
+
+.rectangle {
+	position: absolute;
+}
+
 
 .menu_wrapper {
 	position: relative;
