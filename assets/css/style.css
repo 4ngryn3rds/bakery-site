@@ -391,31 +391,68 @@ justify-content: center;
 	flex-wrap: wrap;
 	padding-top: 140px;
 	padding-bottom: 108px;
+	row-gap: 100px;
 }
 
 .menu__photo {
 	position: relative;
 	object-fit: cover;
-	padding-bottom: 20px;
+
+}
+.photo-wrapper {
+	position: relative;
 	clip-path: polygon(0px 0px, 418px 0px, 418px 512px, 50px 512px, 0px 462px);
 }
 
-.menu__photo:after {
+.photo-wrapper:after {
 	content: '';
 	position: absolute;
 	width: 50px;
 	height: 50px;
 	background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
-	bottom: 25px;
-	left: -20px;
+	bottom: 4px;
+	left: 0px;
 }
 
+.description-wrapper {
+	display: flex;
+	border: 4px solid blue;
+	max-width: 653px;
+}
+
+
 .menu__description {
+	border: 3px solid green;
 	background-color: #fff;
-	max-width: 548px;
 	text-align: center;
 	padding-top: 80px;
-	min-height: 512px;
+	height: 512px;
+	flex-basis: 548px;
+	flex-shrink: 0.5;
+}
+
+.description-wrapper__spacer {
+	border: 1px solid yellow;
+	flex-basis: 105px;
+	flex-shrink: 1;
+	position: relative;
+
+}
+
+.test {
+
+}
+
+.menu__timer {
+	position: absolute;
+	border: 1px solid blue;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+	background-image:  url('../images/timer_water_sign.png');
+	right: 0px;
+	top: -62px;
 }
 
 .menu__positions {
@@ -423,6 +460,7 @@ justify-content: center;
 	border: 1px solid black;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 20px;
 }
 
 .menu__arrow {
@@ -449,6 +487,20 @@ justify-content: center;
 	border-radius: 50%;
 }
 
+.menu__wrapper {
+	border: 1px solid gold;
+}
+
+.menu__header {
+	justify-content: space-between;
+	display: flex;
+	border: 1px solid red;
+}
+
+.menu__wrapper-spacer {
+	border: 1px solid black;
+	flex-basis: 106px;
+}
 
 .menu__title {
 	text-align: left;
@@ -460,12 +512,13 @@ justify-content: center;
 	font-weight: 700;
 	font-family: "Alegreya";
 	padding-bottom: 14px;
+	display: block;
 }
 
 .menu__subtitle{
 	text-align: left;
 	padding-left: 64px;
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 	font-size: 14px;
 	letter-spacing: 1px;
 	line-height: 30px;
@@ -473,7 +526,11 @@ justify-content: center;
 	font-weight: 700;
 	font-family: "Alegreya";
 	text-transform: uppercase;
+	display: block;
 }
+
+
+
 
 .menu__information {
 	text-align: left;
@@ -484,136 +541,9 @@ justify-content: center;
 	font-family: "Proxima Nova";
 	padding-left: 64px;
 	padding-right: 84px;
-	margin-bottom: 100px ;
+	margin-bottom: 70px ;
 }
 
-
-
-.container3 {
-	background: #fff url('../images/Ebene11.jpg') no-repeat center;
-	background-size: 1600px auto;
-	background-position: 0px -20px;
-	width: 1600px;
-	height: 760px;
-	position: relative;
-	align-items: center;
-	display: flex;
-}
-
-
-.rectangle {
-	position: absolute;
-}
-
-
-.menu_wrapper {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	margin-left: 265px;
-}
-
-.menu_photo_wrapper{
-	display: flex;
-	position: relative;
-}
-
-.menu_photo {
-	background: url('../images/menu_photo.png') no-repeat;
-	background-size: auto 512px;
-	width: 418px;
-	height: 512px;
-	background-position: -325px;
-	clip-path: polygon(0px 0px, 418px 0px, 418px 512px, 50px 512px, 0px 462px);
-}
-
-.paper_triangle{
-	position: absolute;
-	display: block;
-	top: 462px;
-}
-
-.menu_description {
-	background: #fff url('../images/mill.png') no-repeat center;
-	background-position: right bottom;
-	width: 548px;
-	position: relative;
-	display: block;
-}
-
-.menu_title {
-	display: block;
-	font-size: 48px;
-	letter-spacing: 1px;
-	line-height: 30px;
-	color: #56534c;
-	font-weight: 700;
-	font-family: "Alegreya";
-	margin-left: 60px;
-	margin-top: 83px;
-}
-
-.submenu_title{
-	font-size: 14px;
-	letter-spacing: 1px;
-	line-height: 30px;
-	color: #a47d5e;
-	font-weight: 700;
-	font-family: "Alegreya";
-	margin-left: 60px;
-	margin-top: 21px;
-}
-
-.dish_information {
-	width: 420px;
-	height: 58px;
-	font-size: 14px;
-	letter-spacing: 1px;
-	line-height: 24px;
-	color: #56534c;
-	font-family: "Proxima Nova";
-	margin-left: 60px;
-	margin-top: 72px;
-}
-
-.menu_list_block{
-	margin-top: 80px;
-	margin-left: 60px;
-	margin-right: 60px;
-	bottom: 40px;
-	color: black;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.menu_circle {
-	width: 90px;
-	height: 90px;
-	clip-path: circle(50%);
-	margin: 0px 15px;
-}
-
-.dish1 {
-	background: url('../images/dish1.png') no-repeat;
-	background-position: 40% 50%;
-}
-
-.dish2 {
-	background: url('../images/dish2.png') no-repeat;
-	background-position: 50% 100%;
-}
-
-.dish3 {
-	background: url('../images/dish3.png') no-repeat;
-	background-position: 100% 60%;
-}
-
-.nav_left { fill: #d8bba3 }
-.nav_right { fill: #d8bba3 }
-
-.nav_left:hover { fill:#56534c }
-.nav_right:hover { fill:#56534c }
 
 .ready_timer {
 	display: block;
