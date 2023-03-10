@@ -207,7 +207,7 @@ radial-gradient(circle closest-side, #564f4cb5 20%, #00000000 100%)
 	z-index: 10;
 }
 
-/*------2nd block------*/
+/*------1nd block------*/
 .chef {
 background-color: #fefefd;
 display: flex;
@@ -381,7 +381,7 @@ justify-content: center;
 
 
 
-/*------3rd block------*/
+/*------2rd block------*/
 .menu {
 	background-image: url('../images/Ebene11.jpg');
 	background-size: cover;
@@ -443,7 +443,7 @@ justify-content: center;
 
 }
 
-.menu__timer {
+.timer {
 	position: absolute;
 	border: 1px solid blue;
 	text-align: center;
@@ -557,7 +557,7 @@ justify-content: center;
 	box-shadow: 10px 20px 50px #c6bcb4,-10px 20px 50px #c6bcb4
 }
 
-.ready_in{
+.timer__readi-in{
 	display: block;
 	font-size: 18px;
 	letter-spacing: 2px;
@@ -570,7 +570,7 @@ justify-content: center;
 	margin-top: 34px;
 }
 
-.timer {
+.timer__time {
 	font-size: 92px;
 	letter-spacing: 2px;
 	line-height: 30px;
@@ -582,7 +582,7 @@ justify-content: center;
 	margin-top: 43px;
 }
 
-.mins {
+.timer__mins {
 	display: block;
 	font-size: 18px;
 	letter-spacing: 2px;
@@ -593,46 +593,44 @@ justify-content: center;
 	margin-top: 15px;
 }
 
-/*------4th block------*/
-.container4 {
-	background: #fff url('../images/background_container4.jpg') no-repeat;
-	background-size: 1600px auto;
-	background-position: 0px -165px;
-	height: 760px;
-	color: #fff;
+/*------3th block------*/
+.prices {
+	background-image:url('../images/background_container4.jpg');
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: cover;
 	position: relative;
-}
-
-.container4_wrapper {
-	width: 1260px;
-	height: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0px auto;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	border: 1px solid black;
+	row-gap: 70px;
 }
 
-.prices_section {
-	width: 50%;
-	display: block;
+.prices__pricelist {
+	flex-basis: 630px;
+	flex-shrink: 1;
 	text-align: center;
+	border: 1px solid blue;
+	padding-bottom: 40px;
 }
 
-.prices_section_title {
-	margin-top: 95px;
+.prices__title {
+	padding-top: 95px;
 	font-size: 60px;
 	letter-spacing: 3px;
 	line-height: 30px;
-	color: #ffffff;
+	color: #fff;
 	font-weight: 700;
 	font-family: "Alegreya";
 	text-align: center;
 	display: block;
-	margin-bottom: 18px;
-
 }
 
-.prices_section_subtitle {
-	margin-bottom: 50px;
+.prices__subtitle {
+	padding-top: 18px;
 	font-size: 18px;
 	letter-spacing: 3px;
 	line-height: 30px;
@@ -643,61 +641,153 @@ justify-content: center;
 	display: block;
 }
 
-.menu_item {
-	margin-top: 0px;
-	display: block;
+.product__title {
+	padding-top: 50px;
 	font-size: 30px;
 	letter-spacing: 2px;
 	line-height: 30px;
 	color: #ffffff;
 	font-weight: 700;
 	font-family: "Alegreya";
-	text-align: center;
 }
 
-.menu_item_description {
-	margin-top: 16px;
+.product__description {
+	padding-top: 16px;
 	font-weight: 400;
 	font-family: "Proxima Nova";
-	display: block;
 	color: #c2beba
 }
 
-.price {
-	margin-top: 34px;
-	display: block;
+.product__price {
+	padding-top: 34px;
 	font-size: 36px;
 	letter-spacing: 2px;
 	line-height: 30px;
 	color: #dfc691;
 	font-weight: 400;
 	font-family: "Alegreya";
-	text-align: center;
 }
 
-.water_sign_prices {
-	margin: 5px 0;
-	background: url('../images/water_sign_prices.png') no-repeat center;
-	display: block;
-}
-
-.notes_section {
-	width: 630px;
-	display: block;
+.prices__item {
+	border: 1px solid red;
 	position: relative;
-
 }
 
-.note_book {
+.prices__item:after {
 	position: absolute;
+	content: '';
+	background: url('../images/water_sign_prices.png') no-repeat center;
+	width: 90px;
+	height: 27px;
+	bottom: -39px;
+	left: 50%;
+	margin-left: -45px;
+}
+
+.prices__item:last-child {
+	padding: 0;
+}
+
+.prices__item:last-child::after {
+	content: none;
+}
+
+.prices__note {
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
+	flex-basis: 630px;
+	flex-shrink: 1;
+	justify-content: right;
+	position: relative;
+}
+
+.prices__sheet3 {
+	position: absolute		;
+	display: flex;
+	right: -25px;
+	width: 400px;
+	height: 502px;
+	background: #cac7bd;
+}
+
+.prices__sheet2 {
+	position: absolute		;
+	display: flex;
+	right: -13px;
+	width: 420px;
+	height: 548px;
+	background: #e5e3d8;
+}
+
+.prices__sheet1 {
+	position: 	absolute	;
+	display: flex;
 	width: 440px;
 	height: 600px;
-	right: 0px;
-	top:88px;
 	background: #ffffff;
 }
 
-/*------5th block------*/
+.prices__sheet {
+	position: relative;
+	display: flex;
+	width: 440px;
+	height: 600px;
+	background: #ffffff;
+}
+
+
+.prices__inner {
+	text-align: center;
+	border: 1px dashed black;
+	margin: 10px;
+	flex-grow: 1;
+}
+
+.prices__note-title {
+	padding-top: 180px;
+	margin: 0px auto;
+	max-width: 350px;
+	font-size: 44px;
+	letter-spacing: 1px;
+	line-height: 60px;
+	color: #56534c;
+	font-weight: 700;
+	font-family: "Alegreya";
+}
+
+.prices__note-text {
+	padding-top: 40px;
+	margin: 0px auto;
+	max-width: 350px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #56534c;
+	font-family: "Proxima Nova", sans-serif;
+}
+
+.prices__button {
+	margin: 53px;
+	width: 190px;
+	height: 50px;
+	background-color: #fff0;
+	border: 1px solid #9e9c93;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #a47d5e;
+	font-weight: 700;
+	font-family: "Alegreya";
+	cursor: pointer;
+
+}
+
+.prices__button:hover {
+	border: 1px solid #000;
+	color: #715036;
+}
+/*------footer block------*/
 .container5 {
 	background-color: #f3f1e9;
 	height: 1160px;
