@@ -30,15 +30,15 @@
 
 /*------header block------*/
 
-.header__wrapper {
+.header__wrapper {40px
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	border: 1px solid skyblue;
+	column-gap: 40px;
+	row-gap: 5px;
 }
 
 .header__shrink {
-	border: 1px solid purple;
 	padding-left: 170;
 	flex-basis: 170px;
 	flex-shrink: 0.5;
@@ -75,18 +75,15 @@
 
 .header__logo {
 	align-items: center;
-	border: 1px solid gold;
 	margin-top: auto;
 	margin-bottom: auto;
 
 }
 
 .header__navigation {
-	border: 1px solid gold;
 }
 
 .header__list {
-	border: 1px solid;
 	font-family: "Alegreya";
 	font-size: 14px;
 	letter-spacing: 4px;
@@ -103,32 +100,27 @@
 }
 
 .header__wrapper {
-	border: 1px solid red;
 	flex-basis: 1260px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .header__item-wrapper {
-	border: 1px solid red;
 	display: flex;
 	justify-content: space-between;
 	column-gap: 40px;
 }
 
 .header__tilda {
-	border: 1px solid green;
 	color: #ffffff;
 }
 
 .header__item {
 	flex-grow: 2;
-	border: 1px solid silver;
 	position: relative;
 }
 
 .header__link {
-	border: 1px solid blue;
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -138,7 +130,6 @@
 	display: flex;
 	justify-content: space-between;
 	column-gap: 29px;
-	border: 1px solid gold;
 	align-items: center;
 }
 
@@ -146,7 +137,6 @@
 }
 
 .header__info {
-	border: 1px solid green;
 	display: block;
 	text-align: center;
 }
@@ -162,7 +152,6 @@
 	text-align: center;
 	padding-top: 172px;
 	padding-bottom: 80px;
-	border: 1px solid gold;
 	position: relative;
 }
 
@@ -190,7 +179,6 @@
 	filter: drop-shadow(0px 1px 0px #3d3029);
 	padding: 70px 0px;
 	max-width: 550px;
-	border: 1px solid gold;
 	margin: 0px auto;
 }
 
@@ -285,7 +273,6 @@ justify-content: center;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-	border: 1px solid red;
 	max-width: 372px;
 	margin: 0px auto;
 }
@@ -293,7 +280,6 @@ justify-content: center;
 
 .chef__name {
 	display: inline-block;
-	border: 1px solid blue;
 	font-size: 24px;
 	letter-spacing: 1px;
 	line-height: 30px;
@@ -312,7 +298,6 @@ justify-content: center;
 	display: inline-block;
 	object-fit: cover;
 	object-position: left;
-	border: 1px solid green;
 }
 
 .chef__subtext {
@@ -330,7 +315,6 @@ justify-content: center;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	margin-bottom: 92px;
-	border: 1px solid gold;
 }
 
 .chef__subtext:before {
@@ -399,7 +383,7 @@ justify-content: center;
 
 /*------2rd block------*/
 .menu {
-	background-image: url('../images/Ebene11.jpg');
+	background-image: url('../images/background_section2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -432,13 +416,11 @@ justify-content: center;
 
 .description-wrapper {
 	display: flex;
-	border: 4px solid blue;
 	max-width: 653px;
 }
 
 
 .menu__description {
-	border: 3px solid green;
 	background-image: url('../images/mill.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
@@ -452,7 +434,6 @@ justify-content: center;
 }
 
 .description-wrapper__spacer {
-	border: 1px solid yellow;
 	flex-basis: 105px;
 	flex-shrink: 1;
 	position: relative;
@@ -465,7 +446,6 @@ justify-content: center;
 
 .timer {
 	position: absolute;
-	border: 1px solid blue;
 	text-align: center;
 	width: 200px;
 	height: 200px;
@@ -473,11 +453,11 @@ justify-content: center;
 	background-image:  url('../images/timer_water_sign.png');
 	right: 0px;
 	top: -62px;
+	box-shadow: 19px 36px 36px #ded8d490, -19px 36px 36px #ded8d490;
 }
 
 .menu__positions {
 	display: flex;
-	border: 1px solid black;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 20px;
@@ -508,17 +488,14 @@ justify-content: center;
 }
 
 .menu__wrapper {
-	border: 1px solid gold;
 }
 
 .menu__header {
 	justify-content: space-between;
 	display: flex;
-	border: 1px solid red;
 }
 
 .menu__wrapper-spacer {
-	border: 1px solid black;
 	flex-basis: 106px;
 }
 
@@ -643,7 +620,6 @@ justify-content: center;
 	flex-basis: 630px;
 	flex-shrink: 1;
 	text-align: center;
-	border: 1px solid blue;
 	padding-bottom: 40px;
 }
 
@@ -703,7 +679,6 @@ justify-content: center;
 }
 
 .prices__item {
-	border: 1px solid red;
 	position: relative;
 }
 
@@ -727,7 +702,6 @@ justify-content: center;
 }
 
 .prices__note {
-	border: 1px solid red;
 	display: flex;
 	align-items: center;
 	flex-basis: 630px;
@@ -837,6 +811,7 @@ justify-content: center;
 	border: 1px solid #000;
 	color: #715036;
 }
+
 /*------footer block------*/
 .footer {
 	position: relative;
@@ -882,18 +857,15 @@ justify-content: center;
 
 .footer__left-spacer{
 	flex-basis: 330px;
-	border: 1px solid purple;
 	flex-shrink: 3;
 }
 
 .footer__right-spacer{
 	flex-basis: 330px;
-	border: 1px solid purple;
 	flex-shrink: 3;
 }
 
 .footer__ingredients {
-	border: 1px solid black;
 	display: flex;
 	text-align: center;
 	position: relative;
@@ -936,17 +908,9 @@ justify-content: center;
 	text-align: center
 }
 
-.footer__ingredient {
-	width: 200px;
-	height: 200px;
-	background-color: pink;
-	border: 1px solid black;
-}
-
 .footer__recipe-wrapper {
 	display: flex;
 	height: 580px;
-	border: 1px solid blue;
 	justify-content: flex-end;
 	margin-top: 100px;
 	flex-basis: 840px;
@@ -989,7 +953,6 @@ justify-content: center;
 	background-color: black;
 	flex-basis: 840px;
 	height: 554px;
-	border: 1px solid purple;
 	background-image: url('../images/footer_recipe.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1000,29 +963,30 @@ justify-content: center;
 }
 
 .footer__timer-wrapper {
+	align-items: center;
 	position: relative;
 	top: -23px;
 	z-index: 1;
 }
 
 .footer__timer {
-	border: 1px solid blue;
 	text-align: center;
 	width: 200px;
 	height: 200px;
 	background-color: #fff;
 	background-image:  url('../images/timer_water_sign.png');
+	padding-top: 20px;
 }
 
 .footer__timer2 {
-	border: 1px solid blue;
 	text-align: center;
 	width: 200px;
 	height: 200px;
 	background-color: #ffffffb9;
+	padding-top: 20px;
 }
 
-.footer__readi-in{
+.footer__readi-in {
 	display: block;
 	font-size: 18px;
 	letter-spacing: 2px;
@@ -1032,7 +996,7 @@ justify-content: center;
 	font-weight: 700;
 	font-family: "Alegreya";
 	text-align: center;
-	margin-top: 34px;
+	margin-top: 0px;
 }
 
 .footer__time {
@@ -1058,7 +1022,6 @@ justify-content: center;
 	font-weight: 700;
 	font-family: "Alegreya";
 	text-align: center;
-	margin-top: 34px;
 }
 
 .footer__time2 {
@@ -1107,7 +1070,6 @@ justify-content: center;
 	display: flex;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
-	border: 1px solid blue;
 	display: flex;
 	flex-grow: 2;
 	flex-shrink: 2;
@@ -1116,7 +1078,6 @@ justify-content: center;
 
 .footer__link {
 	white-space: nowrap;
-	border: 1px solid red;
 	text-decoration: none;
 	font-size: 14px;
 	letter-spacing: 4px;
@@ -1128,7 +1089,6 @@ justify-content: center;
 }
 
 .footer__tilda {
-	border: 1px solid black;
 }
 
 .footer__nav-wrapper {
@@ -1141,7 +1101,6 @@ justify-content: center;
 .footer__nav-spacer {
 	display: flex;
 	width: 170px;
-	border: 1px solid purple;
 	flex-shrink: 3;
 }
 
@@ -1158,7 +1117,6 @@ justify-content: center;
 .tilda__wrapper {
 	display: flex;
 	flex-basis: 87px;
-	border: 1px solid orange;
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 2;
